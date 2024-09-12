@@ -377,3 +377,7 @@ type block_lit (* inlined *) = (
       list (* zero or more *)
   * Token.t (* "}" *)
 )
+
+type extra = Comment of Loc.t * comment
+
+type extras = extra list
